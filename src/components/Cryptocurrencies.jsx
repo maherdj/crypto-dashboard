@@ -2,7 +2,7 @@ import React from 'react'
 
 const Cryptocurrencies = () => {
   return (
-    <div>
+    <div style={{ textAlign: "justify", textIndent: 30}}>
         Cryptocurrencies
     </div>
   )

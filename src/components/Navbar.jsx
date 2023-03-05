@@ -6,15 +6,15 @@ import icon from '../images/cryptocurrency.png';
 
 const Navbar = () => {
   return (
-    <div className='nav-container'>
-        <div className='logo-container'>
-            <Avatar src={icon} size="large"/>
+    <div className="nav-container">
+        <div className="logo-container">
+            <Avatar src={icon} size="large" />
             <Typography.Title level={2} className="logo">
-                <Link to="/">CryptoDashboard</Link>
+                <Link to="/">Crypto Dashboard</Link>
             </Typography.Title>
             
         </div>
-        {/* <Menu theme="dark">
+        <Menu theme="dark">
             <Menu.Item icon={<HomeOutlined />}>
                 <Link to="/">Home</Link>
             </Menu.Item>
@@ -28,7 +28,7 @@ const Navbar = () => {
                 <Link to="/news">News</Link>
             </Menu.Item>
 
-        </Menu> */}
+        </Menu>
       
     </div>
   );

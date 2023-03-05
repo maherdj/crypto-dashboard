@@ -2,7 +2,7 @@ import React from 'react'
 
 const News = () => {
   return (
-    <div>
+    <div style={{ textAlign: "justify", textIndent: 30}}>
         News
     </div>
   )

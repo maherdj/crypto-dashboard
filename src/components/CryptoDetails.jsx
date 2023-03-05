@@ -2,10 +2,10 @@ import React from 'react'
 
 const CryptoDetails = () => {
   return (
-    <div>
+    <div style={{ textAlign: "justify", textIndent: 30}}>
         CryptoDetails
     </div>
   )
 }
 
-export default Homepage
+export default CryptoDetails

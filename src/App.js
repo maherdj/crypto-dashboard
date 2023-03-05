@@ -3,7 +3,7 @@ import { Routes, Route, Link } from 'react-router-dom';
 import { Layout, Typography, Space } from 'antd';
 
 import { Navbar, Exchanges, Homepage, Cryptocurrencies, News, CryptoDetails } from './components';
-// import './App.css'
+ import './App.css'
 
 const App = () => {
   return (
@@ -13,32 +13,37 @@ const App = () => {
             <Navbar />
         </div>
         <div className="main">
-            {/* <Layout>
+            <Layout>
                 <div className="routes">
                     <Routes>
-                        <Route path="/" element={<Homepage/>}>
+                        <Route exact path="/" element={<Homepage />} />
+
+                        <Route exact path="/exchanges" element={<Exchanges />} />
+
+                        <Route exact path="/cryptocurrencies" element={<Cryptocurrencies />} />
+
+                        <Route exact path="/crypto/:coinId" element={<CryptoDetails />} />
+
+                        <Route exact path="/news" element={<News />} />
                             
-                        </Route>
-                        <Route path="exchanges" element={<Exchanges/>}>
-                            
-                        </Route>
-                        <Route exact path="cryptocurrencies" element={<Cryptocurrencies/>}>
-                            
-                        </Route>
-                        <Route path="crypto/:coinId" element={<CryptoDetails/>}>
-                        </Route>
-                            
-                        
-                        <Route path="News" element={<News/>}>
-                            
-                        </Route>
+                       
                         
                     </Routes>
                 </div>
-            </Layout> */}
-        </div>
+            </Layout>
+        
         <div className="footer">
+            <Typography.Title level={5} style={{ color: 'white', textAlign: 'center'}}>
+                Crypto Dashboard <br />
+                All rights reserved
+            </Typography.Title>
+            <Space>
+                <Link to="/">Home</Link>
+                <Link to="/exchanges">Exchanges</Link>
+                <Link to="/news">News</Link>
+            </Space>
 
+        </div>
         </div>
     </div>
   );

@@ -2,7 +2,7 @@ import React from 'react'
 
 const Exchanges = () => {
   return (
-    <div>
+    <div style={{ textAlign: "justify", textIndent: 30}}>
         Exchanges
     </div>
   )
